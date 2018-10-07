@@ -1,6 +1,7 @@
-﻿export enum Category { JavaScript, CSS, HTML, TypeScript, Angular }
+﻿// Task #7.2
+import { Category } from './enums'
 
-export interface Book {
+interface Book {
   id: number;
   title: string;
   author: string;
@@ -10,9 +11,11 @@ export interface Book {
   markDamaged?: (reason: string) => void;
 }
 
-export interface Librarian {
+interface Librarian {
     name: string;
     email: string;
     department: string;
     assistCustomer: (custName: string) => void;
 }
+
+export { Book, Librarian };
