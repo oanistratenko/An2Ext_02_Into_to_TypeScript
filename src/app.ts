@@ -79,13 +79,9 @@ PrintBook(myBook);
 
 myBook.markDamaged("missing back cover");
 
-
-
 const favoriteLibrarian: Librarian = new UniversityLibrarian();
 favoriteLibrarian.name = 'Anna';
 favoriteLibrarian.assistCustomer('Andrey');
-
-
 
 // Task #5.2
 const ref = new ReferenceItem(`Sme title`, 1234);
@@ -101,4 +97,4 @@ ref.printItem();
 
 // Task #6
 const refBook = new Encyclopedia('second book', 1998, 5);
-refBook.printItem();  
+refBook.printItem();
